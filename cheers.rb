@@ -12,17 +12,16 @@ while i < count do
   if hyphen.include? name[i]
     i= i+1
   end
+  if space.include? name[i]
+    break
+  end
   if vowel.include? name[i]
     puts "Give me an.. " +name[i]
   else
     puts "Give me a.. " +name[i]
   end
   i = i + 1
-  if space.include? name[i]
-    break
-  end
 end
-
 puts "#{name}'s just GRAND!"
 
 
